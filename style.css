@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Press+Start+2P&display=swap');
+
+* {
+	margin: 0px;
+}
+
+html {
+	font-family: 'Press Start 2P', cursive;
+	font-family: 'Kdam Thmor Pro', sans-serif;
+	font-size: 24px;
+	color: white;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+}
+
+nav {
+	height: 2rem;
+	padding: 0px;
+	margin: opx;
+	background-color: #02090D;
+	display: flex;
+	justify-content: space-between;
+}
+
+#logo {
+	height: 1.6rem;
+	aspect-ratio: 1/1;
+	margin: 0.2rem;
+	border-radius: 6px;
+}
+
+nav span {
+	color: #F2A922
+}
+
+nav div {
+	display: flex;
+	align-items: center;
+}
+
+nav a {
+	font-size: 0.8rem;
+	color: #F2A922;
+	text-decoration: none;
+	margin: 1rem;
+	float: right;
+}
+
+nav a:hover {
+	transition-duration: 0.5s;
+	text-decoration: underline;
+}
+
+header {
+	background-color: #02090D;
+	margin-top: 0px;
+	height: 70vh;
+}
+
+header img {
+	float: right;
+	height: 80%;
+	width: auto;
+	padding: 7vh;
+}
+
+header h1 {
+	font-size: 32px;
+	color: #F28705;
+	padding: 7vh 0px 4vh 7vh;
+}
+
+header p {
+	font-size: 18px;
+	padding-left: 7vh;
+}
+
+header button {
+	background-color: #F28705; 
+	border: none;
+	border-radius: 5px 1rem 1rem 5px;
+	box-shadow: 0px 0px #E04225;
+	height: 1.8rem;
+	width: 4rem;
+	margin: 7vh 0px 0px 23vh;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+}
+header button:hover {
+	transition-duration: 0.4s;
+	transition-timing-function: cubic-bezier(0.2,0.8,2);
+	transform: translateX(2vh);
+	box-shadow: -9vh 0px #E0531A;
+}
