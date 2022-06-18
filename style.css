@@ -14,6 +14,7 @@ html {
 
 body {
 	margin: 0px;
+	background-color: #02090D;
 }
 
 nav {
@@ -57,7 +58,7 @@ nav a:hover {
 header {
 	background-color: #02090D;
 	margin-top: 0px;
-	height: 70vh;
+	height: 68vh;
 }
 
 header img {
@@ -89,9 +90,168 @@ header button {
 	transition-duration: 0.5s;
 	transition-timing-function: ease;
 }
+
 header button:hover {
 	transition-duration: 0.4s;
 	transition-timing-function: cubic-bezier(0.2,0.8,2);
 	transform: translateX(2vh);
 	box-shadow: -9vh 0px #E0531A;
+}
+
+h2 {
+	text-align: center;
+	color: #02090D;
+	font-size: 1rem;
+	padding: 10px;
+	border-radius: 25px 25px 0px 0px;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 0px 0px -25px -25px;
+}
+
+h2, ul {
+	background-color: #F28705;
+}
+
+#characters li {
+	display: inline;
+	padding: 0px;
+}
+
+#characters li div {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	width: 14vw;
+}
+
+#characters li div img {
+	border: 0px solid white;
+	border-radius: 3px;
+}
+
+#characters li div img:hover {
+	animation: spin 1.5s cubic-bezier(.55,.12,.44,.86) 0s;
+	-webkit-animation: spin 1.5s cubic-bezier(.55,.12,.44,.86) 0s;
+	-moz-animation: spin 1.5s cubic-bezier(.55,.12,.44,.86) 0s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+	from{
+		transform: rotate(0deg) scale(1.04);
+	} 25% {
+		transform: rotate(9deg) scale(1.04);
+	} 75% {
+		transform: rotate(-9deg) scale(1.04);
+	} to {
+		transform: rotate(0deg) scale(1.04);
+	}
+}
+
+@-webkit-keyframes spin{
+	from{
+		transform: rotate(0deg) scale(1.04);
+	} 25% {
+		transform: rotate(9deg) scale(1.04);
+	} 75% {
+		transform: rotate(-9deg) scale(1.04);
+	} to {
+		transform: rotate(0deg) scale(1.04);
+	}
+}
+
+@-moz-keyframes spin {
+	from{
+		transform: rotate(0deg) scale(1.04);
+	} 25% {
+		transform: rotate(9deg) scale(1.04);
+	} 75% {
+		transform: rotate(-9deg) scale(1.04);
+	} to {
+		transform: rotate(0deg) scale(1.04);
+	}
+}
+
+#characters li div span{
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+figure {
+	background-color: white;
+	height: 8rem;
+}
+
+blockquote, figcaption {
+	color: #62696D;
+}
+
+blockquote {
+	padding: 5vh 22vw 2vh 22vw;
+	font-style: italic;
+}
+
+figcaption {
+	float: right;
+	margin-right: 22vw;
+}
+
+#invite {
+	background-color: white;
+	padding: 2vh;
+}
+
+#invite-card {
+	background-color: #02090D;
+	margin: 2vh 16vw;
+	padding: 3vh;
+	border-radius: 2vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#invite-card button {
+	font-size: 0.75rem;
+	aspect-ratio: 3/1;
+	border: none;
+	border-radius: 5px;
+	height: 2em;
+	float: right;
+	background-color: white;
+	display: inline;
+	margin-left: 1rem;
+}
+
+#invite-card button:hover {
+	transition-duration: 0.1s;
+	background-color: #CCC;
+}
+
+#invite-card div h5 {
+	font-size: 1.5rem;
+}
+
+#invite-card div span {
+	font-size: 0.8rem;
+
+}
+
+footer {
+	text-align: center;
+}
+
+footer span {
+	font-size: 0.7rem;
+	font-family: none;
+	padding: 0.5em;
 }
