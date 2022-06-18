@@ -215,6 +215,7 @@ figcaption {
 	margin: 2vh 16vw;
 	padding: 3vh;
 	border-radius: 2vh;
+	box-shadow: 0px 5px 8px 1px #CCC;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
